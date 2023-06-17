@@ -1,0 +1,37 @@
+<!-- Qustion 1  : - Here is a sample html file with a submit button. Now modify the style of the paragraph text through javascript code. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Qustion 1</title>
+</head>
+<body>
+    <!-- add heading in HTML -->
+    <h1>Here is a sample html file with a submit button. Now modify the style of the paragraph text through javascript code</h1>
+    <!-- Add Paragraph IN HTML -->
+    <p id = "onePara">
+        Yes, Guys! I am A paragraph and My Descriptions is : - Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus est, illo dignissimos facere molestias ullam dolores voluptate iure consequuntur, atque ipsum eveniet quo eius numquam officiis! Perspiciatis quaerat corrupti recusandae!
+    </p>
+    <!-- Add button Click on This Button To Seen Some Chnage on Paragraph -->
+    <button id = "fristBtn" onclick="addStyle()">Click ME to See The Changes!!</button>
+
+    <!-- Add Style using JAVA Script -->
+
+    <script>
+        // target the elements likes : - button and paragraph
+        const element1 = document.getElementById("onePara");
+        const btn1 = document.getElementById("fristbtn");
+
+        function addStyle(){
+            element1.style.fontSize = "20px";
+            element1.style.fontWeight = "700";
+            element1.style.color = "green";
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
